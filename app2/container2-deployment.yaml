@@ -39,4 +39,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 6001
-  type: LoadBalancer
+  type: ClusterIP
