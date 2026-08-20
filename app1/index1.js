@@ -40,7 +40,6 @@ app.post('/calculate', async (req, res) => {
     }
 
     try {
-        //changes need to be made for deployemnt in url
         const response = await axios.post('http://container2-service:6001/calculate', { file, product });
         return res.json(response.data);
     } catch (error) {
